@@ -15,19 +15,19 @@ function Header() {
             <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
                 <ul className='navbar-nav text-uppercase'>
                     <li className='nav-item'>
-                        <Link className='nav-link text-light' to='/'>Home</Link>
+                        <Link to='/' className='nav-link text-light'>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-link text-light' to='/services'>Services</Link>
+                        <Link to='/services' className='nav-link text-light'>Services</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-link text-light' to='/portfolio'>Portfolio</Link>
+                        <Link to='/portfolio' className='nav-link text-light'>Portfolio</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-link text-light' to='/contact'>Contact</Link>
+                        <Link to='/contact' className='nav-link text-light'>Contact</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-link text-light' to='/legalNotice'>Mentions Légales</Link>
+                        <Link to='/legalNotice' className='nav-link text-light'>Mentions Légales</Link>
                     </li>
                 </ul>
             </div>

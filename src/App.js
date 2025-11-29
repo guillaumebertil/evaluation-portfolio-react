@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import Header from './components/Header';
+import Footer from './components/Footer'
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -24,7 +25,8 @@ function App() {
                 <Route path='/legalNotice' element={<LegalNotice/>}></Route>
             </Routes>
         </main>
-    
+
+        <Footer />
     </div>
   );
 }
