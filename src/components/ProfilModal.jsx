@@ -34,33 +34,33 @@ function ProfilModal() {
             <Modal.Body className='modal-body'>
                 <div className='d-flex align-items-center'>
                     {/* Avatar */}
-                    <img src={user.avatar_url} alt="Avatar de John Doe"/>
+                    <img src={user.avatar_url} alt="Avatar de John Doe" className='avatar'/>
 
                     {/* Informations */}
                     <ul className='list-unstyled'>
                         {/* User */}
-                        <li className='pb-1 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-person ms-3"></i> <a href={user.html_url} target='_blank' rel='noopener noreferrer nofollow'>{user.name}</a>
+                        <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                            <i class="bi bi-person"></i> <a href={user.html_url} target='_blank' rel='noopener noreferrer nofollow'>{user.name}</a>
                         </li>
                         {/* Localisation */}
-                        <li className='pb-1 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-geo-alt ms-3"></i>
+                        <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                            <i class="bi bi-geo-alt"></i>
                         </li>
                         {/* Bio */}
-                        <li className='pb-1 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-card-text ms-3"></i> {user.bio}
+                        <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                            <i class="bi bi-card-text"></i> {user.bio}
                         </li>
                         {/* Repositories */}
-                        <li className='pb-1 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-box ms-3"></i> Repositories : {user.public_repos}
+                        <li className='pb-1 ps-2 border-bottom border-secondary'>
+                            <i class="bi bi-box"></i> Repositories : {user.public_repos}
                         </li>
                         {/* Follwers */}
-                        <li className='pb-1 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-people ms-3"></i> Followers : {user.followers}
+                        <li className='pb-1 ps-2 border-bottom border-secondary'>
+                            <i class="bi bi-people"></i> Followers : {user.followers}
                         </li>
                         {/* Following */}
-                        <li>
-                            <i class="bi bi-people ms-3"></i> Following : {user.following}
+                        <li className='ps-2'>
+                            <i class="bi bi-people"></i> Following : {user.following}
                         </li>
                     </ul>
                 </div>
