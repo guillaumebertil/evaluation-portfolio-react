@@ -8,7 +8,7 @@ function ProfilModal() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const [user, setUser] = useState([]);
+    const [user, setUser] = useState(null);
 
     const getUsers = async () => {
         const res = await fetch('https://api.github.com/users/github-john-doe')
@@ -26,44 +26,48 @@ function ProfilModal() {
             En savoir plus
         </Button>
 
-        <Modal show={show} onHide={handleClose} aria-labelledby='contained-modal-title-vcenter' centered dialogClassName='modal-lg'>
+        <Modal show={show} onHide={handleClose} centered size="lg">
             <Modal.Header closeButton>
                 <Modal.Title id='contained-modal-title-vcenter'>Mon profil GitHub</Modal.Title>
             </Modal.Header>
             
             <Modal.Body className='modal-body'>
-                <div className='d-flex align-items-center'>
-                    {/* Avatar */}
-                    <img src={user.avatar_url} alt="Avatar de John Doe" className='avatar'/>
+                {user ? (
+                    <div className='d-flex align-items-center'>
+                        {/* Avatar */}
+                        <img src={user.avatar_url} alt="Avatar de John Doe" className='avatar'/>
 
-                    {/* Informations */}
-                    <ul className='list-unstyled'>
-                        {/* User */}
-                        <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-person"></i> <a href={user.html_url} target='_blank' rel='noopener noreferrer nofollow'>{user.name}</a>
-                        </li>
-                        {/* Localisation */}
-                        <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-geo-alt"></i>
-                        </li>
-                        {/* Bio */}
-                        <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
-                            <i class="bi bi-card-text"></i> {user.bio}
-                        </li>
-                        {/* Repositories */}
-                        <li className='pb-1 ps-2 border-bottom border-secondary'>
-                            <i class="bi bi-box"></i> Repositories : {user.public_repos}
-                        </li>
-                        {/* Follwers */}
-                        <li className='pb-1 ps-2 border-bottom border-secondary'>
-                            <i class="bi bi-people"></i> Followers : {user.followers}
-                        </li>
-                        {/* Following */}
-                        <li className='ps-2'>
-                            <i class="bi bi-people"></i> Following : {user.following}
-                        </li>
-                    </ul>
-                </div>
+                        {/* Informations */}
+                        <ul className='list-unstyled'>
+                            {/* User */}
+                            <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                                <i className='bi bi-person'></i> <a href={user.html_url} target='_blank' rel='noopener noreferrer nofollow'>{user.name}</a>
+                            </li>
+                            {/* Localisation */}
+                            <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                                <i className='bi bi-geo-alt'>{user.location}</i>
+                            </li>
+                            {/* Bio */}
+                            <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                                <i className='bi bi-card-text'></i> {user.bio}
+                            </li>
+                            {/* Repositories */}
+                            <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                                <i className='bi bi-box'></i> Repositories : {user.public_repos}
+                            </li>
+                            {/* Follwers */}
+                            <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
+                                <i className='bi bi-people'></i> Followers : {user.followers}
+                            </li>
+                            {/* Following */}
+                            <li className='ps-2'>
+                                <i className='bi bi-people'></i> Following : {user.following}
+                            </li>
+                        </ul>
+                    </div>
+                ) : (
+                    <p>Chargement...</p>
+                )}
 
             </Modal.Body>
         
