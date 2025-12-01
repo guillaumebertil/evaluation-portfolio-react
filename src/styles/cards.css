@@ -1,0 +1,14 @@
+/* Styles communs pour toutes les cards */
+.card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    filter: brightness(0.85);
+}

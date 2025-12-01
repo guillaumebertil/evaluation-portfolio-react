@@ -1,6 +1,6 @@
 import ServiceCard from "../components/ServiceCard";
 
-import banner from "../assets/images/banner.jpg"
+import banner from "../assets/images/banner.jpg";
 
 function Services() {
     return (
