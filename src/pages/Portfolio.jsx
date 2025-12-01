@@ -1,4 +1,5 @@
 import PortfolioCard from "../components/ProjectCard";
+import PagesTitle from "../components/PagesTitle";
 
 import banner from "../assets/images/banner.jpg";
 
@@ -18,12 +19,7 @@ function Portfolio() {
             </div>
 
             {/* Portfolio */}
-            <div className="container">
-                <div className="col-md-6 mx-auto border-bottom border-4 border-primary">
-                    <h1 className="text-center">Portfolio</h1>
-                    <p className="text-center"><small>Voici quelques-unes de mes réalisations</small></p>
-                </div>
-            </div>
+            <PagesTitle title="Portfolio" description="Voici quelques-unes de mes réalisations"/>
 
             {/* Section cards */}
             <div className="container text-center">

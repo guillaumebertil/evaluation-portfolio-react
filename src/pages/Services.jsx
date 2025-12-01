@@ -1,4 +1,5 @@
 import ServiceCard from "../components/ServiceCard";
+import PagesTitle from "../components/PagesTitle";
 
 import banner from "../assets/images/banner.jpg";
 
@@ -10,12 +11,7 @@ function Services() {
             </div>
             
             {/* Section services */}
-            <div className="container">
-                <div className="col-md-6 mx-auto border-bottom border-4 border-primary">
-                    <h1 className="text-center">Mon offre de services</h1>
-                    <p className="text-center"><small>Voici les prestations sur lesquelles je peux intervenir</small></p>
-                </div>
-            </div>
+            <PagesTitle title="Mon offre de service" description="Voici les prestations sur lesquelles je peux intervenir" />
 
             {/* Section cards */}
             <div className="container text-center">
