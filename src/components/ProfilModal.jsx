@@ -45,7 +45,7 @@ function ProfilModal() {
                             </li>
                             {/* Localisation */}
                             <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
-                                <i className='bi bi-geo-alt'>{user.location}</i>
+                                <i className='bi bi-geo-alt'></i> {user.location}
                             </li>
                             {/* Bio */}
                             <li className='pb-1 ps-2 mb-1 border-bottom border-secondary'>
