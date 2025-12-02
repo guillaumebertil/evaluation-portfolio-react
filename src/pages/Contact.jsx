@@ -38,19 +38,21 @@ function Contact() {
                         <h4>John Doe</h4>
 
                         {/* Adresse */}
-                        <p className='mt-2 mb-0'><i className="bi bi-map"></i> 40 rue Laure Diebold</p>
-                        <p className='mb-0'><i className="bi bi-geo-alt"></i> 69009 Lyon, France  </p> 
+                        <address>
+                            <p className='mt-2 mb-0'><i className="bi bi-map"></i> 40 rue Laure Diebold</p>
+                            <p className='mb-0'><i className="bi bi-geo-alt"></i> 69009 Lyon, France  </p>
 
-                        {/* Téléphone */}
-                        <p className='mb-0'><i className="bi bi-phone"></i> 10 20 30 40 50</p>
+                            {/* Téléphone */}
+                            <p className='mb-0'><i className="bi bi-phone"></i> 10 20 30 40 50</p>
 
-                        {/* Mail */}
-                        <p className='mb-0'><a href='mailto:john.doe@gmail.com' className='text-decoration-none text-dark'><i className="bi bi-envelope-at"></i> john.doe@gmail.com</a></p>
+                            {/* Mail */}
+                            <p className='mb-0'><a href='mailto:john.doe@gmail.com' className='text-decoration-none text-dark'><i className="bi bi-envelope-at"></i> john.doe@gmail.com</a></p>
 
-                        {/* Google Map */}
-                        <div className="ratio ratio-4x3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55246.743227522806!2d4.798979!3d45.778662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e1!3m2!1sfr!2sfr!4v1764662933358!5m2!1sfr!2sfr" style={{ border:"0" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            {/* Google Map */}
+                            <div className="ratio ratio-4x3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55246.743227522806!2d4.798979!3d45.778662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e1!3m2!1sfr!2sfr!4v1764662933358!5m2!1sfr!2sfr" style={{ border:"0" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </address>
                     </div>
                 </div>
             </div>

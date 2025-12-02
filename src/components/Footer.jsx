@@ -10,14 +10,16 @@ function Footer() {
                         <h5>John Doe</h5>
 
                         {/* Adresse */}
-                        <p className='mt-2 mb-0'>40 rue Laure Diebold</p>
-                        <p className='mb-0'>69009 Lyon, France  </p> 
+                        <address>
+                            <p className='mt-2 mb-0'>40 rue Laure Diebold</p>
+                            <p className='mb-0'>69009 Lyon, France  </p>
 
-                        {/* Téléphone */}
-                        <p className='mb-0'>10 20 30 40 50</p>
+                            {/* Téléphone */}
+                            <p className='mb-0'>10 20 30 40 50</p>
 
-                        {/* Mail */}
-                        <p className='mb-0'><a href='mailto:john.doe@gmail.com' className='text-decoration-none text-light'>john.doe@gmail.com</a></p>
+                            {/* Mail */}
+                            <p className='mb-0'><a href='mailto:john.doe@gmail.com' className='text-decoration-none text-light'>john.doe@gmail.com</a></p>
+                        </address>
 
                         {/* Réseaux sociaux */}
                         <div className='d-flex justify-content-start mt-3 fs-2 gap-2'>
