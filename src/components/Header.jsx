@@ -15,7 +15,7 @@ function Header() {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark pt-3 px-5">
             {/* Logo */}
             <NavLink className='navbar-brand text-light' to='/' onClick={closeMenu}>
                 JOHN DOE
