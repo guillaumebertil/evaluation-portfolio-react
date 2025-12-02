@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+
+import '../styles/app.css';
 
 function Header() {
     const [ isOpen, setIsOpen ] = useState(false);
@@ -15,9 +17,9 @@ function Header() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
             {/* Logo */}
-            <Link className='navbar-brand text-light' to='/' onClick={closeMenu}>
+            <NavLink className='navbar-brand text-light' to='/' onClick={closeMenu}>
                 JOHN DOE
-            </Link>
+            </NavLink>
 
             {/* Menu burger */}
             <button className='navbar-toggler' type='button' onClick={toggleMenu} aria-controls='navbarNav' aria-expanded={isOpen} aria-label='Toggle navigation'>
@@ -28,19 +30,19 @@ function Header() {
             <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id='navbarNav'>
                 <ul className='navbar-nav ms-auto text-uppercase'>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-link text-light' onClick={closeMenu}>Home</Link>
+                        <NavLink to='/' className='nav-link text-light' onClick={closeMenu}>Home</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/services' className='nav-link text-light' onClick={closeMenu}>Services</Link>
+                        <NavLink to='/services' className='nav-link text-light' onClick={closeMenu}>Services</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/portfolio' className='nav-link text-light' onClick={closeMenu}>Portfolio</Link>
+                        <NavLink to='/portfolio' className='nav-link text-light' onClick={closeMenu}>Portfolio</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' className='nav-link text-light' onClick={closeMenu}>Contact</Link>
+                        <NavLink to='/contact' className='nav-link text-light' onClick={closeMenu}>Contact</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/legalNotice' className='nav-link text-light' onClick={closeMenu}>Mentions Légales</Link>
+                        <NavLink to='/legalNotice' className='nav-link text-light' onClick={closeMenu}>Mentions Légales</NavLink>
                     </li>
                 </ul>
             </div>

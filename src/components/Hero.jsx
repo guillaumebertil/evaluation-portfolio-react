@@ -1,4 +1,6 @@
 import "./Hero.css";
+import '../styles/app.css';
+
 import heroImage from "../assets/images/hero-bg.jpg";
 
 import ProfilModal from "./ProfilModal";
