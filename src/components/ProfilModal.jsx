@@ -22,7 +22,7 @@ function ProfilModal() {
 
   return (
     <div>
-        <Button variant="danger" onClick={handleShow}>
+        <Button variant="danger px-4" onClick={handleShow}>
             En savoir plus
         </Button>
 

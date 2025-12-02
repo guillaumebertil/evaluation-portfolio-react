@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer'
@@ -11,9 +11,8 @@ import Contact from './pages/Contact';
 import LegalNotice from './pages/LegalNotice';
 
 function App() {
-  return (
+    return (
     <div className='App'>
-
         <Header />
 
         <main>
@@ -25,10 +24,10 @@ function App() {
                 <Route path='/legalNotice' element={<LegalNotice/>}></Route>
             </Routes>
         </main>
-
+        
         <Footer />
     </div>
-  );
+    );
 }
 
 export default App;

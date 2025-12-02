@@ -13,10 +13,16 @@
 }
 
 .hero-content h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 }
 
 .hero-content h2 {
-    margin: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+    margin: 1.8rem;
 }
