@@ -10,7 +10,7 @@ function Services() {
             <div className="banner" style={{ backgroundImage: `url(${banner})`, height:"200px", backgroundSize:"cover", backgroundPosition:"center" }}>
             </div>
             
-            {/* Section services */}
+            {/* Titre de la page */}
             <PagesTitle title="Mon offre de service" description="Voici les prestations sur lesquelles je peux intervenir" />
 
             {/* Section cards */}

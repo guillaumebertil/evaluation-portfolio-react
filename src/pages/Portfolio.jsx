@@ -18,7 +18,7 @@ function Portfolio() {
             <div className="banner" style={{ backgroundImage: `url(${banner})`, height:"200px", backgroundSize:"cover", backgroundPosition:"center" }}>
             </div>
 
-            {/* Portfolio */}
+            {/* Titre de la page */}
             <PagesTitle title="Portfolio" description="Voici quelques-unes de mes réalisations"/>
 
             {/* Section cards */}
