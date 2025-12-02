@@ -28,7 +28,7 @@ function Header() {
 
             {/* Menu de navigation */}
             <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id='navbarNav'>
-                <ul className='navbar-nav ms-auto text-uppercase'>
+                <ul className='navbar-nav ms-auto px-3 text-uppercase'>
                     <li className='nav-item'>
                         <NavLink to='/' className='nav-link text-light' onClick={closeMenu}>Home</NavLink>
                     </li>
