@@ -8,7 +8,7 @@ function LegalNotice() {
             <PagesTitle title="Mentions légales" description=""/>
 
             {/* Accordéon */}
-            <div className="container">
+            <div className="container mb-5 pb-4">
                 <div className="accordion" id="accordion">
                     {/* Editeur du site */}
                     <div className="accordion-item">
