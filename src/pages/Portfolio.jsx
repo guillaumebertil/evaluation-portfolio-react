@@ -15,15 +15,14 @@ function Portfolio() {
     return (
         <div>
             {/* Bannière */}
-            <div className="banner" style={{ backgroundImage: `url(${banner})`, height:"200px", backgroundSize:"cover", backgroundPosition:"center" }}>
-            </div>
+            <img src={banner} alt="bannière" style={{ width: "100%", objectFit:"cover" }}/>
 
             {/* Titre de la page */}
             <PagesTitle title="Portfolio" description="Voici quelques-unes de mes réalisations"/>
 
             {/* Section cards */}
             <div className="container text-center">
-                <div className="row d-flex justify-content-center g-2">
+                <div className="row d-flex justify-content-center g-3 my-4 pt-2 pb-4">
 
                     {/* Fresh Food */}
                     <div className="col-12 col-md-4 d-flex justify-content-center">

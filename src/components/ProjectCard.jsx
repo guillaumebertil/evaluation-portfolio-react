@@ -9,7 +9,7 @@ function PortfolioCard(props) {
             {/* Card body */}
             <div className="card-body">
                 {/* Card title */}
-                <h5 className="card-title">{props.title}</h5>
+                <h3 className="card-title">{props.title}</h3>
 
                 {/* Card content */}
                 <p className="card-text">{props.content}</p>
