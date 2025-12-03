@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
+import '../styles/app.css';
 
 function Footer() {
     return (
         <div className='bg-dark text-light py-5'>
             <div className='container'>
-                <div className='row d-flex justify-content-md-center'>
+                <div className='row d-flex justify-content-md-center px-4'>
                     {/* Informations */}
-                    <div className='col-md-4'>
-                        <h5>John Doe</h5>
+                    <div className='col-md-4 ps-4'>
+                        <h4>John Doe</h4>
 
                         {/* Adresse */}
                         <address>
@@ -22,19 +23,19 @@ function Footer() {
                         </address>
 
                         {/* Réseaux sociaux */}
-                        <div className='d-flex justify-content-start mt-3 fs-2 gap-2'>
+                        <div className='d-flex justify-content-start mt-3 fs-2 gap-2 social-icon'>
                             {/* Lien Github */}
-                            <a href='https://github.com/github-john-doe' target='_blank' rel='noopener noreferrer nofollow' className='text-light'>
+                            <a href='https://github.com/github-john-doe' target='_blank' rel='noopener noreferrer nofollow' className='text-secondary'>
                                 <i className='bi bi-github'></i>
                             </a>
 
                             {/* Lien Twitter */}
-                            <a href='https://x.com/' target='_blank' rel='noopener noreferrer nofollow' className='text-light'>
+                            <a href='https://x.com/' target='_blank' rel='noopener noreferrer nofollow' className='text-secondary'>
                                 <i className='bi bi-twitter'></i>
                             </a>
 
                             {/* Lien LinkedIn */}
-                            <a href='https://fr.linkedin.com/' target='_blank' rel='noopener noreferrer nofollow' className='text-light'>
+                            <a href='https://fr.linkedin.com/' target='_blank' rel='noopener noreferrer nofollow' className='text-secondary'>
                                 <i className='bi bi-linkedin'></i>
                             </a>
                         </div>
@@ -42,7 +43,7 @@ function Footer() {
 
                     {/* Liens utiles */}
                     <div className='col-md-4'>
-                        <h5>Liens utiles</h5>
+                        <h4>Liens utiles</h4>
                         <ul className='list-unstyled'>
                             {/* Accueil */}
                             <li>
@@ -68,8 +69,8 @@ function Footer() {
                     </div>
 
                     {/* Dernières réalisations */}
-                    <div className='col-md-4'>
-                        <h5>Mes dernières réalisations</h5>
+                    <div className='col-md-4 ps-0'>
+                        <h4>Mes dernières réalisations</h4>
                         <ul className='list-unstyled'>
                             {/* Fresh Food */}
                             <li>
