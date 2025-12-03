@@ -1,9 +1,8 @@
-/* .modal-header, .modal-body, .modal-footer {
-    background-color: black;
-} */
+.modal-header, .modal-body, .modal-footer {
+    background-color: #212529;
+    color: white;
+}
 
-.avatar {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
+#closeButton {
+    color: white;
 }
